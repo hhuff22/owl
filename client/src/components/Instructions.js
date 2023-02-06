@@ -22,7 +22,7 @@ export default function Instructions() {
           <b>
             We need you to write unit tests for this web application that maximize
             test coverage. Feel free to make any changes to the code that you
-            see fit. You may also add other types of tests other than unit tests if you'd like.
+            see fit. You may also add types of tests other than unit tests if you'd like.
           </b>
         </p>
         <h3>Backend</h3>
