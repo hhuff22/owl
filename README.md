@@ -13,6 +13,11 @@ cd client
 npm install
 npm run start
 ```
+We are aware of a couple of intermittent issues in the challenge. 
+  - If you receive a conflicting peer dependency issue when installing running `npm install`, use the legacy dependencies flag: `npm install --legacy-peer-deps`. 
+  - Depending on your environment, you may also run into an error stating that digital envelope routines are unsupported when trying to run the client. You can solve this by   running `export NODE_OPTIONS=--openssl-legacy-provider` in bash.
+  - When running the server, you receive an error related to logging in the console. This is actually the web framework throwing an error - we don't have logging implemented for this challenge, but the server is running.
+
 
 After running previous commands, you should see a website with instructions at `http://localhost:3000`.
 
