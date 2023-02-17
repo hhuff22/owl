@@ -16,12 +16,14 @@ public class TestDistributor {
     @Test
     public void test_addItem() {
         distributor.addItem(item);
+
         assertTrue(distributor.getItems().contains(item));
     }
 
     @Test
     public void test_getCheapestCost() {
         distributor.addItem(item);
+
         assertEquals(4, distributor.getCheapestCost("apple"), .001);
     }
 }

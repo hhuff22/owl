@@ -21,6 +21,7 @@ public class TestInventory {
         List<Item> expectedInventory = new ArrayList<>();
         expectedInventory.add(licorice);
         expectedInventory.add(goodPlenty);
+        
         assertEquals(inventory.getInventory().get(0).getName(), expectedInventory.get(0).getName());
         assertEquals(inventory.getInventory().get(1).getStock(), expectedInventory.get(1).getStock());
         assertEquals(inventory.getInventory().get(0).getCapacity(), expectedInventory.get(0).getCapacity());
@@ -34,6 +35,7 @@ public class TestInventory {
         expectedUnderStocked.add(goodPlenty);
         expectedUnderStocked.add(twix);
         List<Item> actualUnderStocked = inventory.getItemsUnderPercentCapacity(0.25);
+
         assertEquals(actualUnderStocked.get(0).getName(), expectedUnderStocked.get(0).getName());
         assertEquals(actualUnderStocked.get(1).getStock(), expectedUnderStocked.get(1).getStock());
         assertEquals(actualUnderStocked.get(0).getCapacity(), expectedUnderStocked.get(0).getCapacity());

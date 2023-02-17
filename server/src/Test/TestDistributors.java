@@ -40,4 +40,14 @@ public class TestDistributors {
         assertEquals(firstDistributorFirstItem.getName(), firstDistributorFirstItem.getName());
         assertEquals(thirdDistributorSecondItem.getCost(), thirdDistributorSecondItem.getCost(), .001);
     }
+
+    @Test
+    public void test_getRestockCost() {
+        String itemsToRestock = "[{\"name\":\"Good & Plenty\",\"stock\":4,\"capacity\":20,\"cost\":3,\"id\":786123}," +
+                "{\"name\":\"Twix\",\"stock\":17,\"capacity\":70,\"cost\":2,\"id\":627791}]";
+        double expectedRestockCost = 1.62;
+        double actualRestockCost = distributors.getRestockCost(itemsToRestock);
+
+        assertEquals(expectedRestockCost, actualRestockCost, .001);
+    }
 }
