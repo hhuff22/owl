@@ -94,5 +94,7 @@ public class Inventory {
         return itemsUnderStocked;
     }
 
+    public List<Item> getInventory() { return inventory; }
+
     // mutators excluded since not required for requested functionality.
 }

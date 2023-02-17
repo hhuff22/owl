@@ -105,4 +105,6 @@ public class Distributors {
 
         return cost;
     }
+
+    public List<Distributor> getDistributors() { return distributors; }
 }

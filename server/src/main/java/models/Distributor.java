@@ -26,4 +26,6 @@ public class Distributor {
         // doesn't exist in vendor
         return Double.MAX_VALUE;
     }
+
+    public List<Item> getItems() { return items; }
 }

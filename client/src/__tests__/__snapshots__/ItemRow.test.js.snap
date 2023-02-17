@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Row should render correctly 1`] = `
+<DocumentFragment>
+  9dummy item name107
+  <input
+    data-testid="item-row-9"
+    type="number"
+    value="1"
+  />
+</DocumentFragment>
+`;

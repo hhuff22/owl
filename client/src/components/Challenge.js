@@ -42,6 +42,7 @@ export default function Challenge() {
             ? ""
             : lowStock.data.map((item) => (
                 <ItemRow
+                  data-testid={"item-row"}
                   key={item.id}
                   item={item}
                   lowStock={lowStock}
@@ -53,7 +54,7 @@ export default function Challenge() {
       <div class="totalCost">
         Total Cost: ${Math.round((restockCost + Number.EPSILON) * 100) / 100}
       </div>
-      <button onClick={handleClickLowStock}>Get Low-Stock Items</button>
+      <button onClick={handleClickLowStock} data-testid="low-stock-button">Get Low-Stock Items</button>
       <button onClick={handleClickReorderCost}>Determine Re-Order Cost</button>
     </>
   );

@@ -29,7 +29,7 @@ const ItemRow = ({ item, lowStock, setLowStock }) => {
       <td>{item.stock}</td>
       <td>{item.capacity}</td>
       <td>
-        <input type="number" value={item.cost} onChange={handleChange}></input>
+        <input type="number" value={item.cost} onChange={handleChange} data-testid={`item-row-${item.id}`}></input>
       </td>
     </tr>
   );
