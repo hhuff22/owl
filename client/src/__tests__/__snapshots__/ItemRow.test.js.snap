@@ -2,7 +2,7 @@
 
 exports[`Item Row should render correctly 1`] = `
 <DocumentFragment>
-  9dummy item name107
+  9dummy item name57
   <input
     data-testid="item-row-9"
     type="number"
