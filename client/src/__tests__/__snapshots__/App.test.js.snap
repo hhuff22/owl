@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render correctly 1`] = `
+exports[`Should render correctly 1`] = `
 <DocumentFragment>
   <div
     class="sidebar"
@@ -88,6 +88,48 @@ exports[`should render correctly 1`] = `
     <p>
       The frontend will be responsible for utilizing the Java endpoints to display the low-stock items and calculating the cost of restocking items. You will need to add the appropriate event listeners to the buttons for using these endpoints.
     </p>
+  </div>
+  <div
+    class="challenge-container"
+  >
+    <table>
+      <thead>
+        <tr>
+          <td>
+            SKU
+          </td>
+          <td>
+            Item Name
+          </td>
+          <td>
+            Amount in Stock
+          </td>
+          <td>
+            Capacity
+          </td>
+          <td>
+            Order Amount
+          </td>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <div
+      class="totalCost"
+      data-testid="total-cost"
+    >
+      Total Cost: $0
+    </div>
+    <button
+      data-testid="low-stock-button"
+    >
+      Get Low-Stock Items
+    </button>
+    <button
+      data-testid="reorder-button"
+    >
+      Determine Re-Order Cost
+    </button>
   </div>
 </DocumentFragment>
 `;

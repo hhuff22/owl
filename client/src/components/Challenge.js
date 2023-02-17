@@ -51,11 +51,11 @@ export default function Challenge() {
               ))}
         </tbody>
       </table>
-      <div class="totalCost">
+      <div class="totalCost" data-testid="total-cost">
         Total Cost: ${Math.round((restockCost + Number.EPSILON) * 100) / 100}
       </div>
       <button onClick={handleClickLowStock} data-testid="low-stock-button">Get Low-Stock Items</button>
-      <button onClick={handleClickReorderCost}>Determine Re-Order Cost</button>
+      <button onClick={handleClickReorderCost} data-testid="reorder-button">Determine Re-Order Cost</button>
     </>
   );
 }
